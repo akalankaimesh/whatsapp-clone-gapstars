@@ -8,18 +8,14 @@ A WhatsApp clone project built with **Vue.js 3.3.4** and running on **Node.js 16
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Demo
-
-You can access a live demo of this WhatsApp clone at [Demo Link](insert_demo_link_here). Feel free to explore and use it to get a better understanding of the project.
-
 ## Features
 
 This WhatsApp clone project incorporates a range of features, including:
 
 - Real-time chat functionality powered by **Firebase v8.2.1**
 - User authentication using Google Sign-In
-- State management with **Pinia Store**
-- User interface designed with **Tailwind CSS v3.3.3**
+- State management with [**Pinia Store**](https://pinia.vuejs.org/introduction.html)
+- User interface designed with [**Tailwind CSS v3.3.3**](https://tailwindcss.com/docs/installation)
 
 ## Installation
 
