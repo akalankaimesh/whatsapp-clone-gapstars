@@ -8,7 +8,7 @@
     <div class="border-b basis-full flex flex-col px-4 justify-center align-middle ml-1">
       <div class="flex justify-between">
         <span class="text-lg">{{ lastItem.userName }}</span>
-        <span>{{ lastItem.createdAt.seconds }}</span>
+        <span>{{ secondsFromNow(lastItem.createdAt.seconds) }}</span>
       </div>
       <div class="flex justify-between">
         <p class="text-wa-msg-gray text-sm text-ellipsis overflow-hidden line-clamp-1">
@@ -21,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import moment from 'moment';
 import { useMainStore } from "../store";
 import { computed } from "vue"
 const store = useMainStore();
@@ -30,7 +31,9 @@ const props = defineProps({
   },
   uid: { type: String }
 });
-
+function secondsFromNow(seconds) {
+  return moment.unix(seconds).fromNow();
+}
 const lastItem = computed(() => props.data[0])
 function setChatActive() {
   store.isChatActive = true;
