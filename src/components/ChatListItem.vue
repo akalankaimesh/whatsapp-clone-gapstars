@@ -34,7 +34,7 @@ const props = defineProps({
 function secondsFromNow(seconds) {
   return moment.unix(seconds).fromNow();
 }
-const lastItem = computed(() => props.data[0])
+const lastItem = computed(() => props.data.filter(item => item.userId == props.uid).reverse()[0])
 function setChatActive() {
   store.isChatActive = true;
   store.activeId = props.uid;
