@@ -1,6 +1,5 @@
 # WhatsApp Clone
 
-
 A WhatsApp clone project built with **Vue.js 3.3.4** and running on **Node.js 16.17.0**. State management is powered by **Pinia Store**, and the user interface is designed with **Tailwind CSS v3.3.3**. Real-time chat functionality and user authentication are handled using **Firebase v8.2.1**.
 
 ## Table of Contents
@@ -26,7 +25,7 @@ This WhatsApp clone project incorporates a range of features, including:
 
 To set up and run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/whatsapp-clone.git`
+1. Clone the repository: `git clone git@github.com:akalankaimesh/whatsapp-clone-gapstars.git`
 2. Navigate to the project directory: `cd whatsapp-clone`
 3. Install project dependencies by running: `npm install`
 4. Start the development server: `npm run dev`
@@ -35,6 +34,7 @@ To set up and run the project locally, follow these steps:
 
 To make the most of this WhatsApp clone, you can follow these usage instructions:
 
-- Sign up with google account 
+- Sign up with google account
 - Send some chats
-- Developed for assesment 
+- Click on 3 dot icon and then click logout btn for SignOut
+- Developed for a assesment
